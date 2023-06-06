@@ -1,0 +1,72 @@
+:root {
+    --gris53: #535353;
+    --gris53-50: #53535350;
+    --gris53-10: #53535310;
+    --gris20: #202020;
+    --blancod6: #d6d6d6;
+}
+.dp-logo-company {
+    text-align: center;
+    margin: 18px 0px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+}
+.dp-logo-company span {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--gris53);
+    text-align: right;
+}
+.dp-aside-menu {
+    background-color: var(--gris20);
+    height: 100vh;
+    width: 230px;
+    color: var(--blancod6);
+    padding: 6px;
+    padding-top: 15px;
+    display: flex; flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.dp-nav-aside {
+    width: 100%;
+    
+    display: flex; flex-direction: column;
+}
+.dp-ul-home, .dp-ul-categories {
+    display: flex; flex-direction: column;
+    gap: 10px;
+}
+.item-list{
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .1s;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    gap: 10px;
+}
+.img-item {
+    width: 20px;
+    height: 20px;
+}
+.item-list.item-selected, .item-list:hover.item-selected {
+    background-color: var(--gris53-50);
+}
+.item-list:hover {
+    background-color: var(--gris53-10);
+}
+.nav-aside-divider {
+    padding: 8px 10px;
+    margin: 15px 0px 0px 0px;
+    border-top: solid 1.8px var(--gris53-50);
+}
+.nav-aside-divider p {
+    color: var(--gris53);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
